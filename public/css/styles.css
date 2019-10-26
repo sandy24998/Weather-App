@@ -1,0 +1,65 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://media.azpm.org/master/image/2017/7/17/hero/lightning.jpg');
+  background-position: center;
+  background-size: cover;
+  max-width: 650px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  display: flex;
+  flex-flow: column;
+}
+.main-content {
+  flex-grow: 1;
+}
+
+footer {
+  color: #fff;
+  border-top: 2px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+header a {
+  color: #fff;
+  margin-right: 16px;
+  text-decoration: none;
+  font-weight: 700;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+input {
+  padding: 6px 8px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid #888888;
+  outline: none;
+}
+button {
+  padding: 10px;
+  width: 100px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background: rgb(127, 223, 38);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
