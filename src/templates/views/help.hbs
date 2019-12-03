@@ -5,15 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/help.css" />
         <link rel="icon" href="/img/logo.png">
-        <title>Help</title>
+        <title>Contact</title>
     </head>
 
     <body>
         <div class="main-content">
             {{>header}}
         </div>
+        <div>
+            <form method="POST" action="">
+                <input name="name" placeholder="Enter your name" class="name" required />
+                <input name="emailaddress" placeholder="Enter your Email" class="email" type="email" required />
+                <textarea rows="4" cols="50" name="subject" placeholder="Please enter your message" class="message"
+                    required></textarea>
+                <input name="submit" class="btn" type="submit" value="Send" />
+            </form>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14634.000852460586!2d77.03960460604152!3d30.25071154278116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1575359498380!5m2!1sen!2sin"
+                width="650" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
         {{>footer}}
+
     </body>
 
 </html>

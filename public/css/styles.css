@@ -15,7 +15,11 @@ body {
 .main-content {
   flex-grow: 1;
 }
-
+#logoImage {
+  margin-left: -100px;
+  position: absolute;
+  top: 6%;
+}
 footer {
   color: #fff;
   border-top: 2px solid #eeeeee;
@@ -38,6 +42,14 @@ header a {
   margin-right: 16px;
   text-decoration: none;
   font-weight: 700;
+  transition: all 0.2s;
+}
+
+header a:hover {
+  border-bottom: 3px solid #7fdf26;
+  background: #7fdf26;
+  border-radius: 4px;
+  padding: 6px;
 }
 p {
   font-family: Arial, Helvetica, sans-serif;

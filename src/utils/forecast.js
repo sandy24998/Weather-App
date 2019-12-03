@@ -14,11 +14,13 @@ const forecast = (latitude, longitute, callback) => {
     } else if (body.error) {
       callback('Unable to find Location, Please Try Again !!!', undefined);
     } else {
+      let temperature = body.currently.temperature;
+      let lt = body.daily.data[0].temperatureLow;
       callback(
         undefined,
         body.daily.data[0].summary +
           'It is currently ' +
-          body.currently.temperature +
+          temperature +
           ' degrees out.There is ' +
           body.currently.precipProbability +
           '% chances of rain'
